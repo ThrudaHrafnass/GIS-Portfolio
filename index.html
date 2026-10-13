@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Purcell — GIS Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <h1>Ali Purcell</h1>
+    <p class="tagline">Aspiring geospatial scientist — geology, emergency management, and city planning</p>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="projects/north-cascades.html">North Cascades</a>
+    <a href="projects/tahlequah-1894.html">Tahlequah 1894</a>
+    <a href="projects/teton-fault.html">Teton Fault</a>
+    <a href="writing.html">Writing</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <h2>About me</h2>
+    <p>My name's Ali Purcell. I'm an aspiring geospatial scientist, with extensive experience in administrative work in a university setting.</p>
+    <p>I am currently going to school full time at Oregon State University for a BS in Geospatial Science, a minor in Fisheries &amp; Wildlife Conservation, and a certificate in Geographic Information Systems.</p>
+    <p>I'm also the full-time administrative secretary for my local College of Science, which means I do everything from creating classes in the computer system and managing enrollment, to filing paperwork for HR and Payroll, to preparing for college events, to managing budgets. I have become a jack of all office trades.</p>
+    <p>In my free time, I write stories and go on hikes with my family.</p>
+    <p>Contact me at <a href="mailto:owliforest@gmail.com">owliforest@gmail.com</a></p>
+
+    <h2>Projects</h2>
+    <div class="card-grid">
+
+      <div class="card">
+        <a href="projects/north-cascades.html"><img data-b64="images/north-cascades.jpg.b64" alt="Helicopter landing zones map of North Cascades National Park"></a>
+        <div class="card-body">
+          <span class="badge">Emergency management</span>
+          <h3><a href="projects/north-cascades.html">Helicopter Landing Zones in North Cascades National Park</a></h3>
+          <p>Suitability analysis identifying potential emergency helicopter landing zones across the park.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="projects/tahlequah-1894.html"><img data-b64="images/tahlequah-1894.jpg.b64" alt="1894 buildings of downtown Tahlequah over modern aerial imagery"></a>
+        <div class="card-body">
+          <span class="badge">City planning &amp; historical GIS</span>
+          <h3><a href="projects/tahlequah-1894.html">Downtown Tahlequah in 1894</a></h3>
+          <p>Georeferenced 1894 Sanborn map buildings overlaid on modern aerial imagery of Tahlequah, Oklahoma.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="projects/teton-fault.html"><img data-b64="images/north-cascades.jpg.b64" alt="Teton Fault project — in progress" style="object-position:center; filter:saturate(0.4);"></a>
+        <div class="card-body">
+          <span class="badge">In progress</span>
+          <h3><a href="projects/teton-fault.html">Teton Fault Seismic Hazard Exposure</a></h3>
+          <p>Fall 2026 term project: which developed visitor areas in Grand Teton National Park are most exposed to seismic hazard from the Teton Fault?</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="projects/cascadia-cougar.html"><img data-b64="images/cascadia-cougar.jpg.b64" alt="Potential cougar habitats map of Cascadia State Park"></a>
+        <div class="card-body">
+          <span class="badge">Habitat analysis</span>
+          <h3><a href="projects/cascadia-cougar.html">Potential Cougar Habitats in Cascadia State Park</a></h3>
+          <p>Habitat suitability mapping for cougar territory in Cascadia State Park, Oregon.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Writing samples</h2>
+    <p>Two ArcGIS StoryMaps — a research proposal and a literature review — are on the <a href="writing.html">writing page</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Ali Purcell — GIS Portfolio. Contact: <a href="mailto:owliforest@gmail.com">owliforest@gmail.com</a>
+  </div>
+</footer>
+
+
+<script>
+document.querySelectorAll('img[data-b64]').forEach(function(img){
+  fetch(img.getAttribute('data-b64')).then(function(r){return r.text();}).then(function(b64){
+    img.src = 'data:image/jpeg;base64,' + b64;
+  });
+});
+</script>
+
+</body>
+</html>

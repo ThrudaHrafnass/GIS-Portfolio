@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teton Fault Seismic Hazard Exposure — Ali Purcell</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <h1>Ali Purcell</h1>
+    <p class="tagline">Aspiring geospatial scientist — geology, emergency management, and city planning</p>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="../index.html">Home</a>
+    <a href="north-cascades.html">North Cascades</a>
+    <a href="tahlequah-1894.html">Tahlequah 1894</a>
+    <a href="teton-fault.html">Teton Fault</a>
+    <a href="../writing.html">Writing</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <span class="badge">In progress · Fall 2026</span>
+    <h2>Teton Fault Seismic Hazard Exposure</h2>
+    <p class="meta">Term project, Spatial Data Science · Oregon State University</p>
+
+    <p><strong>Research question:</strong> Which developed visitor areas in Grand Teton National Park are most exposed to seismic hazard from the Teton Fault?</p>
+
+    <p>This project overlays the Teton Fault trace with USGS seismic hazard data and National Park Service infrastructure locations to rank the exposure of visitor centers, lodges, developed campgrounds, and major trailheads. The Teton Fault is active and capable of a magnitude 7.5 earthquake, with Holocene ruptures documented by the USGS.</p>
+
+    <div class="placeholder">Analysis in progress — maps and findings will be added when the project is complete.</div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Ali Purcell — GIS Portfolio. Contact: <a href="mailto:owliforest@gmail.com">owliforest@gmail.com</a>
+  </div>
+</footer>
+
+
+<script>
+document.querySelectorAll('img[data-b64]').forEach(function(img){
+  fetch(img.getAttribute('data-b64')).then(function(r){return r.text();}).then(function(b64){
+    img.src = 'data:image/jpeg;base64,' + b64;
+  });
+});
+</script>
+
+</body>
+</html>

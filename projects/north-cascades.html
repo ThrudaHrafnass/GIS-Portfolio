@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helicopter Landing Zones in North Cascades National Park — Ali Purcell</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <h1>Ali Purcell</h1>
+    <p class="tagline">Aspiring geospatial scientist — geology, emergency management, and city planning</p>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="../index.html">Home</a>
+    <a href="north-cascades.html">North Cascades</a>
+    <a href="tahlequah-1894.html">Tahlequah 1894</a>
+    <a href="teton-fault.html">Teton Fault</a>
+    <a href="../writing.html">Writing</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <span class="badge">Emergency management</span>
+    <h2>Helicopter Landing Zones in North Cascades National Park</h2>
+    <p class="meta">Completed December 2024 · Data: Washington State Department of Ecology, Washington State Department of Natural Resources, USGS National Map, data.gov</p>
+
+    <figure class="map">
+      <img data-b64="../images/north-cascades.jpg.b64" alt="Map of helicopter landing zone candidates in North Cascades National Park">
+      <figcaption>Landing zone candidates (at least 30 ft × 30 ft, slope less than 5°, clear of obstacles) across the northern unit of North Cascades National Park.</figcaption>
+    </figure>
+
+    <h2>Methods</h2>
+    <div class="placeholder">Ali is writing this section — check back soon.</div>
+
+    <h2>Findings</h2>
+    <div class="placeholder">Ali is writing this section — check back soon.</div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Ali Purcell — GIS Portfolio. Contact: <a href="mailto:owliforest@gmail.com">owliforest@gmail.com</a>
+  </div>
+</footer>
+
+
+<script>
+document.querySelectorAll('img[data-b64]').forEach(function(img){
+  fetch(img.getAttribute('data-b64')).then(function(r){return r.text();}).then(function(b64){
+    img.src = 'data:image/jpeg;base64,' + b64;
+  });
+});
+</script>
+
+</body>
+</html>
